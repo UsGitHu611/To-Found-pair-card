@@ -12,6 +12,7 @@ const App = () => {
     const [openOne, setOpenOne] = useState(null);
     const [openTwo, setOpenTwo] = useState(null);
     const [disabled, setDisabled] = useState(false);
+    
     const shuffleCards = () => {
         const shuffleCard = [...cardList, ...cardList]
             .sort(() => Math.random() - 0.5)
@@ -45,7 +46,6 @@ const App = () => {
         }
     }, [openOne,openTwo]);
 
-    console.log(cards)
     const resetTurn = () => {
         setOpenOne(null);
         setOpenTwo(null);
