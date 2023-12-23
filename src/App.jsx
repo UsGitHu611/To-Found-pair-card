@@ -55,11 +55,12 @@ const App = () => {
 
     return (
         <div>
-            <h1 style={{fontSize:"25px"}}>Two Pair</h1>
+            <div style={{margin:"20px 0"}}>
+            <h1 style={{fontSize:"40px"}}>Two Pair</h1>
             <UIButton onClick={shuffleCards}>
                 New Game
             </UIButton>
-
+            </div>
             <div className="card-grid">
                 {cards.map(card => (
                     <CardItem
